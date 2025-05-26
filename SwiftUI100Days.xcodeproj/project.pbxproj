@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4609A1BE2DD794D70030B96A /* swift-ui-100-days.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-ui-100-days.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4609A1BE2DD794D70030B96A /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B90CFC2DE429C800F1F539 /* Guess the Flag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the Flag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4609A1C02DD794D70030B96A /* swift-ui-100-days */ = {
+		4609A1C02DD794D70030B96A /* WeSplit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "swift-ui-100-days";
+			path = WeSplit;
+			sourceTree = "<group>";
+		};
+		46B90CFD2DE429C800F1F539 /* Guess the Flag */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Guess the Flag";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +32,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46B90CF92DE429C800F1F539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4609A1B52DD794D70030B96A = {
 			isa = PBXGroup;
 			children = (
-				4609A1C02DD794D70030B96A /* swift-ui-100-days */,
+				4609A1C02DD794D70030B96A /* WeSplit */,
+				46B90CFD2DE429C800F1F539 /* Guess the Flag */,
 				4609A1BF2DD794D70030B96A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +54,8 @@
 		4609A1BF2DD794D70030B96A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4609A1BE2DD794D70030B96A /* swift-ui-100-days.app */,
+				4609A1BE2DD794D70030B96A /* WeSplit.app */,
+				46B90CFC2DE429C800F1F539 /* Guess the Flag.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +63,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4609A1BD2DD794D70030B96A /* swift-ui-100-days */ = {
+		4609A1BD2DD794D70030B96A /* WeSplit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4609A1C92DD794D80030B96A /* Build configuration list for PBXNativeTarget "swift-ui-100-days" */;
+			buildConfigurationList = 4609A1C92DD794D80030B96A /* Build configuration list for PBXNativeTarget "WeSplit" */;
 			buildPhases = (
 				4609A1BA2DD794D70030B96A /* Sources */,
 				4609A1BB2DD794D70030B96A /* Frameworks */,
@@ -61,13 +76,35 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4609A1C02DD794D70030B96A /* swift-ui-100-days */,
+				4609A1C02DD794D70030B96A /* WeSplit */,
 			);
-			name = "swift-ui-100-days";
+			name = WeSplit;
 			packageProductDependencies = (
 			);
 			productName = "swift-ui-100-days";
-			productReference = 4609A1BE2DD794D70030B96A /* swift-ui-100-days.app */;
+			productReference = 4609A1BE2DD794D70030B96A /* WeSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46B90CFB2DE429C800F1F539 /* Guess the Flag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B90D062DE429C900F1F539 /* Build configuration list for PBXNativeTarget "Guess the Flag" */;
+			buildPhases = (
+				46B90CF82DE429C800F1F539 /* Sources */,
+				46B90CF92DE429C800F1F539 /* Frameworks */,
+				46B90CFA2DE429C800F1F539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				46B90CFD2DE429C800F1F539 /* Guess the Flag */,
+			);
+			name = "Guess the Flag";
+			packageProductDependencies = (
+			);
+			productName = "Guess the Flag";
+			productReference = 46B90CFC2DE429C800F1F539 /* Guess the Flag.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -83,9 +120,12 @@
 					4609A1BD2DD794D70030B96A = {
 						CreatedOnToolsVersion = 16.3;
 					};
+					46B90CFB2DE429C800F1F539 = {
+						CreatedOnToolsVersion = 16.3;
+					};
 				};
 			};
-			buildConfigurationList = 4609A1B92DD794D70030B96A /* Build configuration list for PBXProject "swift-ui-100-days" */;
+			buildConfigurationList = 4609A1B92DD794D70030B96A /* Build configuration list for PBXProject "SwiftUI100Days" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +139,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4609A1BD2DD794D70030B96A /* swift-ui-100-days */,
+				4609A1BD2DD794D70030B96A /* WeSplit */,
+				46B90CFB2DE429C800F1F539 /* Guess the Flag */,
 			);
 		};
 /* End PBXProject section */
@@ -112,10 +153,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46B90CFA2DE429C800F1F539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4609A1BA2DD794D70030B96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46B90CF82DE429C800F1F539 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,10 +357,66 @@
 			};
 			name = Release;
 		};
+		46B90D042DE429C900F1F539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hammernshield.Guess-the-Flag";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46B90D052DE429C900F1F539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hammernshield.Guess-the-Flag";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4609A1B92DD794D70030B96A /* Build configuration list for PBXProject "swift-ui-100-days" */ = {
+		4609A1B92DD794D70030B96A /* Build configuration list for PBXProject "SwiftUI100Days" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4609A1C72DD794D80030B96A /* Debug */,
@@ -314,11 +425,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4609A1C92DD794D80030B96A /* Build configuration list for PBXNativeTarget "swift-ui-100-days" */ = {
+		4609A1C92DD794D80030B96A /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4609A1CA2DD794D80030B96A /* Debug */,
 				4609A1CB2DD794D80030B96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B90D062DE429C900F1F539 /* Build configuration list for PBXNativeTarget "Guess the Flag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B90D042DE429C900F1F539 /* Debug */,
+				46B90D052DE429C900F1F539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
