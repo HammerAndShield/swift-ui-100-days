@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		4609A1BE2DD794D70030B96A /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		461685342DE6C6BF000385CB /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B90CFC2DE429C800F1F539 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B90D0B2DE5785100F1F539 /* ViewsAndModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewsAndModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -16,6 +17,11 @@
 		4609A1C02DD794D70030B96A /* WeSplit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WeSplit;
+			sourceTree = "<group>";
+		};
+		461685352DE6C6BF000385CB /* BetterRest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BetterRest;
 			sourceTree = "<group>";
 		};
 		46B90CFD2DE429C800F1F539 /* GuessTheFlag */ = {
@@ -32,6 +38,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4609A1BB2DD794D70030B96A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461685312DE6C6BF000385CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +74,7 @@
 				4609A1C02DD794D70030B96A /* WeSplit */,
 				46B90CFD2DE429C800F1F539 /* GuessTheFlag */,
 				46B90D0C2DE5785100F1F539 /* ViewsAndModifiers */,
+				461685352DE6C6BF000385CB /* BetterRest */,
 				4609A1BF2DD794D70030B96A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +85,7 @@
 				4609A1BE2DD794D70030B96A /* WeSplit.app */,
 				46B90CFC2DE429C800F1F539 /* GuessTheFlag.app */,
 				46B90D0B2DE5785100F1F539 /* ViewsAndModifiers.app */,
+				461685342DE6C6BF000385CB /* BetterRest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +113,28 @@
 			);
 			productName = "swift-ui-100-days";
 			productReference = 4609A1BE2DD794D70030B96A /* WeSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		461685332DE6C6BF000385CB /* BetterRest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4616853E2DE6C6C1000385CB /* Build configuration list for PBXNativeTarget "BetterRest" */;
+			buildPhases = (
+				461685302DE6C6BF000385CB /* Sources */,
+				461685312DE6C6BF000385CB /* Frameworks */,
+				461685322DE6C6BF000385CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				461685352DE6C6BF000385CB /* BetterRest */,
+			);
+			name = BetterRest;
+			packageProductDependencies = (
+			);
+			productName = BetterRest;
+			productReference = 461685342DE6C6BF000385CB /* BetterRest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		46B90CFB2DE429C800F1F539 /* GuessTheFlag */ = {
@@ -157,6 +194,9 @@
 					4609A1BD2DD794D70030B96A = {
 						CreatedOnToolsVersion = 16.3;
 					};
+					461685332DE6C6BF000385CB = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					46B90CFB2DE429C800F1F539 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -182,12 +222,20 @@
 				4609A1BD2DD794D70030B96A /* WeSplit */,
 				46B90CFB2DE429C800F1F539 /* GuessTheFlag */,
 				46B90D0A2DE5785100F1F539 /* ViewsAndModifiers */,
+				461685332DE6C6BF000385CB /* BetterRest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4609A1BC2DD794D70030B96A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461685322DE6C6BF000385CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +260,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		4609A1BA2DD794D70030B96A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461685302DE6C6BF000385CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,6 +467,62 @@
 			};
 			name = Release;
 		};
+		4616853C2DE6C6C1000385CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammernshield.BetterRest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4616853D2DE6C6C1000385CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammernshield.BetterRest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		46B90D042DE429C900F1F539 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -541,6 +652,15 @@
 			buildConfigurations = (
 				4609A1CA2DD794D80030B96A /* Debug */,
 				4609A1CB2DD794D80030B96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4616853E2DE6C6C1000385CB /* Build configuration list for PBXNativeTarget "BetterRest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4616853C2DE6C6C1000385CB /* Debug */,
+				4616853D2DE6C6C1000385CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
