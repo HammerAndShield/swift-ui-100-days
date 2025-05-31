@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		4609A1BE2DD794D70030B96A /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		461685342DE6C6BF000385CB /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4629F3D52DEBA97700A41FA6 /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B90CFC2DE429C800F1F539 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B90D0B2DE5785100F1F539 /* ViewsAndModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewsAndModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -22,6 +23,11 @@
 		461685352DE6C6BF000385CB /* BetterRest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BetterRest;
+			sourceTree = "<group>";
+		};
+		4629F3D62DEBA97700A41FA6 /* WordScramble */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WordScramble;
 			sourceTree = "<group>";
 		};
 		46B90CFD2DE429C800F1F539 /* GuessTheFlag */ = {
@@ -45,6 +51,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		461685312DE6C6BF000385CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4629F3D22DEBA97700A41FA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +88,7 @@
 				46B90CFD2DE429C800F1F539 /* GuessTheFlag */,
 				46B90D0C2DE5785100F1F539 /* ViewsAndModifiers */,
 				461685352DE6C6BF000385CB /* BetterRest */,
+				4629F3D62DEBA97700A41FA6 /* WordScramble */,
 				4609A1BF2DD794D70030B96A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +100,7 @@
 				46B90CFC2DE429C800F1F539 /* GuessTheFlag.app */,
 				46B90D0B2DE5785100F1F539 /* ViewsAndModifiers.app */,
 				461685342DE6C6BF000385CB /* BetterRest.app */,
+				4629F3D52DEBA97700A41FA6 /* WordScramble.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +150,28 @@
 			);
 			productName = BetterRest;
 			productReference = 461685342DE6C6BF000385CB /* BetterRest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4629F3D42DEBA97700A41FA6 /* WordScramble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4629F3DD2DEBA97800A41FA6 /* Build configuration list for PBXNativeTarget "WordScramble" */;
+			buildPhases = (
+				4629F3D12DEBA97700A41FA6 /* Sources */,
+				4629F3D22DEBA97700A41FA6 /* Frameworks */,
+				4629F3D32DEBA97700A41FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4629F3D62DEBA97700A41FA6 /* WordScramble */,
+			);
+			name = WordScramble;
+			packageProductDependencies = (
+			);
+			productName = WordScramble;
+			productReference = 4629F3D52DEBA97700A41FA6 /* WordScramble.app */;
 			productType = "com.apple.product-type.application";
 		};
 		46B90CFB2DE429C800F1F539 /* GuessTheFlag */ = {
@@ -188,7 +225,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					4609A1BD2DD794D70030B96A = {
@@ -196,6 +233,9 @@
 					};
 					461685332DE6C6BF000385CB = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					4629F3D42DEBA97700A41FA6 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 					46B90CFB2DE429C800F1F539 = {
 						CreatedOnToolsVersion = 16.3;
@@ -223,6 +263,7 @@
 				46B90CFB2DE429C800F1F539 /* GuessTheFlag */,
 				46B90D0A2DE5785100F1F539 /* ViewsAndModifiers */,
 				461685332DE6C6BF000385CB /* BetterRest */,
+				4629F3D42DEBA97700A41FA6 /* WordScramble */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +277,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		461685322DE6C6BF000385CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4629F3D32DEBA97700A41FA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +315,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		461685302DE6C6BF000385CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4629F3D12DEBA97700A41FA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -523,6 +578,64 @@
 			};
 			name = Release;
 		};
+		4629F3DE2DEBA97800A41FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammernshield.WordScramble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4629F3DF2DEBA97800A41FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammernshield.WordScramble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		46B90D042DE429C900F1F539 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -661,6 +774,15 @@
 			buildConfigurations = (
 				4616853C2DE6C6C1000385CB /* Debug */,
 				4616853D2DE6C6C1000385CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4629F3DD2DEBA97800A41FA6 /* Build configuration list for PBXNativeTarget "WordScramble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4629F3DE2DEBA97800A41FA6 /* Debug */,
+				4629F3DF2DEBA97800A41FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
