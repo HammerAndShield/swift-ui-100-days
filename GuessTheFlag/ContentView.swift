@@ -17,6 +17,8 @@ struct ContentView: View {
     @State private var alertMessage = ""
     @State private var score = 0
     @State private var attempts = 0
+    
+    @State private var tappedFlag: Int? = nil
         
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
@@ -39,6 +41,7 @@ struct ContentView: View {
     }
     
     func askQuestion() {
+        tappedFlag = nil
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
@@ -75,10 +78,16 @@ struct ContentView: View {
                     
                     ForEach(0..<3) { number in
                         Button {
+                            withAnimation() {
+                                tappedFlag = number
+                            }
                             flagTapped(number)
                         } label: {
                             FlagImage(country: countries[number])
                         }
+                        .rotation3DEffect(Angle(degrees: tappedFlag == number ? 360 : 0), axis: (x: 0, y: 1, z: 0))
+                        .opacity(tappedFlag == nil || tappedFlag == number ? 1 : 0.25)
+                        .scaleEffect(tappedFlag == nil || tappedFlag == number ? 1 : 0)
                     }
                 }
                 .frame(maxWidth: .infinity)
