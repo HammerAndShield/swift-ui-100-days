@@ -24,6 +24,18 @@ class Expenses {
         }
     }
     
+    var personal: [ExpenseItem] {
+        items.filter { $0.type == "Personal" }
+    }
+    
+    var business: [ExpenseItem] {
+        items.filter { $0.type == "Business" }
+    }
+    
+    var currencyCode: String {
+        Locale.current.currency?.identifier ?? "USD"
+    }
+    
     init() {
         if let savedItems = UserDefaults.standard.data(forKey: "Items") {
             if let decodedItems = try? JSONDecoder().decode([ExpenseItem].self, from: savedItems) {
