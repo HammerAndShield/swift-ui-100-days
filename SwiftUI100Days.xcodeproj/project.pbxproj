@@ -19,6 +19,7 @@
 		46CDBFEC2DF29FF9009B7F28 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D571B42DFA9244009F48D8 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F8986E2E0C58F1000D701E /* SwiftDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F8988B2E0DA447000D701E /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,6 +94,11 @@
 				46F898862E0D0767000D701E /* Exceptions for "SwiftDataProject" folder in "SwiftDataProject" target */,
 			);
 			path = SwiftDataProject;
+			sourceTree = "<group>";
+		};
+		46F8988C2E0DA447000D701E /* Instafilter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Instafilter;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -182,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46F898882E0DA447000D701E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -200,6 +213,7 @@
 				468E777B2DF69C85002A1054 /* Cupcake Corner */,
 				46D571B52DFA9244009F48D8 /* Bookworm */,
 				46F8986F2E0C58F1000D701E /* SwiftDataProject */,
+				46F8988C2E0DA447000D701E /* Instafilter */,
 				4609A1BF2DD794D70030B96A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -219,6 +233,7 @@
 				468E777A2DF69C85002A1054 /* Cupcake Corner.app */,
 				46D571B42DFA9244009F48D8 /* Bookworm.app */,
 				46F8986E2E0C58F1000D701E /* SwiftDataProject.app */,
+				46F8988B2E0DA447000D701E /* Instafilter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -490,6 +505,28 @@
 			productReference = 46F8986E2E0C58F1000D701E /* SwiftDataProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		46F8988A2E0DA447000D701E /* Instafilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F898932E0DA449000D701E /* Build configuration list for PBXNativeTarget "Instafilter" */;
+			buildPhases = (
+				46F898872E0DA447000D701E /* Sources */,
+				46F898882E0DA447000D701E /* Frameworks */,
+				46F898892E0DA447000D701E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				46F8988C2E0DA447000D701E /* Instafilter */,
+			);
+			name = Instafilter;
+			packageProductDependencies = (
+			);
+			productName = Instafilter;
+			productReference = 46F8988B2E0DA447000D701E /* Instafilter.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -536,6 +573,9 @@
 					46F8986D2E0C58F1000D701E = {
 						CreatedOnToolsVersion = 26.0;
 					};
+					46F8988A2E0DA447000D701E = {
+						CreatedOnToolsVersion = 26.0;
+					};
 				};
 			};
 			buildConfigurationList = 4609A1B92DD794D70030B96A /* Build configuration list for PBXProject "SwiftUI100Days" */;
@@ -564,6 +604,7 @@
 				468E77792DF69C85002A1054 /* Cupcake Corner */,
 				46D571B32DFA9244009F48D8 /* Bookworm */,
 				46F8986D2E0C58F1000D701E /* SwiftDataProject */,
+				46F8988A2E0DA447000D701E /* Instafilter */,
 			);
 		};
 /* End PBXProject section */
@@ -653,6 +694,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46F898892E0DA447000D701E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -734,6 +782,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		46F8986A2E0C58F1000D701E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F898872E0DA447000D701E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1568,6 +1623,70 @@
 			};
 			name = Release;
 		};
+		46F898942E0DA449000D701E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammernshield.Instafilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46F898952E0DA449000D701E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AGB8QV4U73;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hammernshield.Instafilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1684,6 +1803,15 @@
 			buildConfigurations = (
 				46F898772E0C58F4000D701E /* Debug */,
 				46F898782E0C58F4000D701E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F898932E0DA449000D701E /* Build configuration list for PBXNativeTarget "Instafilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F898942E0DA449000D701E /* Debug */,
+				46F898952E0DA449000D701E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
