@@ -6,36 +6,57 @@
 //
 
 import SwiftUI
+import CoreImage
 import PhotosUI
 
 struct ContentView: View {
-    @State private var pickerItems = [PhotosPickerItem]()
-    @State private var selectedImages = [Image]()
-
-    var body: some View {
-        VStack {
-            PhotosPicker(selection: $pickerItems, maxSelectionCount: 3, matching: .any(of: [.images, .not(.screenshots)])) {
-                Label("Select a picture", systemImage: "photo")
-            }
-            
-            ScrollView {
-                ForEach(0..<selectedImages.count, id: \.self) { i in
-                    selectedImages[i]
-                        .resizable()
-                        .scaledToFit()
-                }
-            }
+    @State private var selectedItem: PhotosPickerItem?
+    @State private var processedImage: Image?
+    @State private var filterIntensity = 0.5
+    
+    func changeFilter() {
+        
+    }
+    
+    func loadImage() {
+        Task {
+            guard let imageData = try await selectedItem?.loadTransferable(type: Data.self) else { return }
+            guard let inputImage = UIImage(data: imageData) else { return }
         }
-        .onChange(of: pickerItems) {
-            Task {
-                selectedImages.removeAll()
+    }
+    
+    var body: some View {
+        NavigationStack {
+            VStack {
+                Spacer()
                 
-                for item in pickerItems {
-                    if let loadedImage = try await item.loadTransferable(type: Image.self) {
-                        selectedImages.append(loadedImage)
+                PhotosPicker(selection: $selectedItem) {
+                    if let processedImage {
+                        processedImage
+                            .resizable()
+                            .scaledToFit()
+                    } else {
+                        ContentUnavailableView("No Picture", systemImage: "photo.badge.plus", description: Text("Import a photo to get started"))
                     }
                 }
+                .onChange(of: selectedItem, loadImage)
+                
+                Spacer()
+                
+                HStack {
+                    Text("Intensity")
+                    Slider(value: $filterIntensity)
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Button("Change Filter", action: changeFilter)
+                    
+                    Spacer()
+                }
             }
+            .padding([.horizontal, .bottom])
+            .navigationTitle("Instafilter")
         }
     }
 
