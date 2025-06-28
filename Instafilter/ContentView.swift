@@ -18,9 +18,26 @@ struct ContentView: View {
     @State private var selectedItem: PhotosPickerItem?
     @State private var processedImage: Image?
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 0.5
+    @State private var filterScale = 0.5
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     @State private var showingFilters = false
     let context = CIContext()
+    
+    var hasIntensity: Bool {
+        let inputKeys = currentFilter.inputKeys
+        return inputKeys.contains(kCIInputIntensityKey)
+    }
+    
+    var hasRadius: Bool {
+        let inputKeys = currentFilter.inputKeys
+        return inputKeys.contains(kCIInputRadiusKey)
+    }
+    
+    var hasScale: Bool {
+        let inputKeys = currentFilter.inputKeys
+        return inputKeys.contains(kCIInputScaleKey)
+    }
     
     func changeFilter() {
         showingFilters = true
@@ -41,8 +58,8 @@ struct ContentView: View {
         let inputKeys = currentFilter.inputKeys
 
         if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
-        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey) }
-        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey) }
+        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterRadius * 200, forKey: kCIInputRadiusKey) }
+        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterScale * 10, forKey: kCIInputScaleKey) }
 
         guard let outputImage = currentFilter.outputImage else { return }
         guard let cgImage = context.createCGImage(outputImage, from: outputImage.extent) else { return }
@@ -52,7 +69,9 @@ struct ContentView: View {
     }
     
     func setFilter(_ filter: CIFilter) {
-        currentFilter = filter
+        withAnimation {
+            currentFilter = filter
+        }
         loadImage()
         
         filterCount += 1
@@ -80,22 +99,48 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                HStack {
-                    Text("Intensity")
-                    Slider(value: $filterIntensity)
-                        .onChange(of: filterIntensity, applyProcessing)
-                }
-                .padding(.vertical)
-                
-                HStack {
-                    Button("Change Filter", action: changeFilter)
-                    
-                    Spacer()
-                    
-                    if let processedImage {
-                        ShareLink(item: processedImage, preview: SharePreview("Instafilter image", image: processedImage))
+                Group {
+                    if (hasIntensity) {
+                        HStack {
+                            Text("Intensity")
+                                .frame(width: 80, alignment: .leading)
+                            Slider(value: $filterIntensity)
+                                .onChange(of: filterIntensity, applyProcessing)
+                        }
+                        .padding(.vertical)
                     }
+                    
+                    if (hasRadius) {
+                        HStack {
+                            Text("Radius")
+                                .frame(width: 80, alignment: .leading)
+                            Slider(value: $filterRadius)
+                                .onChange(of: filterRadius, applyProcessing)
+                        }
+                    }
+                    
+                    if (hasScale) {
+                        HStack {
+                            Text("Scale")
+                                .frame(width: 80, alignment: .leading)
+                            Slider(value: $filterRadius)
+                                .onChange(of: filterRadius, applyProcessing)
+                        }
+                    }
+                    
+                    HStack {
+                        Button("Change Filter", action: changeFilter)
+                        
+                        Spacer()
+                        
+                        if let processedImage {
+                            ShareLink(item: processedImage, preview: SharePreview("Instafilter image", image: processedImage))
+                        }
+                    }
+                    .padding(.top)
                 }
+                .disabled(selectedItem == nil)
+                
             }
             .padding([.horizontal, .bottom])
             .navigationTitle("Instafilter")
