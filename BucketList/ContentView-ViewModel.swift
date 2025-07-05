@@ -8,6 +8,8 @@ extension ContentView {
         private(set) var locations: [Location]
         var selectedPlace: Location?
         var isUnlocked = false
+        var isAuthError = false
+        var authError = ""
         
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
         
@@ -31,11 +33,13 @@ extension ContentView {
                     if success {
                         self.isUnlocked = true
                     } else {
-                        // error
+                        self.isAuthError = true
+                        self.authError = "There was an error trying to login. Please try again."
                     }
                 }
             } else {
-                // no biometrics
+                self.isAuthError = true
+                self.authError = "It appears your device does not support biometric authentication, which the app requires."
             }
         }
         
